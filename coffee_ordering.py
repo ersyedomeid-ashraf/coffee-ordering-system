@@ -27,4 +27,22 @@ Items Available - Display all selected coffees with their prices
 
 Total Price - Calculate and display the total amount
 
+
+Cases : C - Checkout
+
+Empty Cart - Your cart is empty
+
+Yes - Order confirmed and cart cleared
+
+No - Checkout cancelled and items remain in cart
+
+Cases : D - Exit
+
+Option 7 - Display goodbye message and terminate program
+
+Cases : E - Invalid Choice
+
+Invalid Option - Display error message and ask user to try again
+
+
 """
