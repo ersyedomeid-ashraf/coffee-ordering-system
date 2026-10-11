@@ -59,7 +59,21 @@ class Coffee:
 
 class Order:
 
-    # initialize prder with emopty list
+    # initialize order with empty list
 
     def __init__(self):
         self.items = []
+
+    # add coffee to order
+
+    def add_item(self, coffee):
+
+        self.items.append(coffee)
+
+        print(f"Added {coffee.name} to your order.")
+
+    # calculate total prize
+
+    def total(self):
+
+        return sum(item.price for item in self.items)
