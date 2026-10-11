@@ -46,3 +46,20 @@ Invalid Option - Display error message and ask user to try again
 
 
 """
+
+
+class Coffee:
+
+    # initialize coffee with name and price
+
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+
+class Order:
+
+    # initialize prder with emopty list
+
+    def __init__(self):
+        self.items = []
