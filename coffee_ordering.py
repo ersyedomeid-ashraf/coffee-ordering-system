@@ -77,3 +77,41 @@ class Order:
     def total(self):
 
         return sum(item.price for item in self.items)
+
+    # show oder summary
+
+    def show_order(self):
+
+        if not self.items:
+
+            print("No items in order.")
+            return
+
+        print("\n your order: ")
+
+        for i, item in enumerate(self.items, 1):
+
+            print(f"{i}. {item.name} - ${item.price}")
+
+        print(f"Total: ${self.total()}\n")
+
+    # handle checkout process
+
+    def checkout(self):
+
+        if not self.items:
+            print("Your cart is empty.")
+
+            return
+
+        self.show_order()
+
+        confirm = input("Proceed to checkout? (yes/no): ").strip().lower()
+
+        if confirm == "yes":
+            print("Order confirmed! Thank you. ")
+
+            self.items.clear()
+
+        else:
+            print("Checkout cancelled.")
